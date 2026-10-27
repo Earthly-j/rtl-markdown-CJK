@@ -98,3 +98,18 @@ body.vscode-body::-webkit-scrollbar-thumb:hover {
     margin-right: 2em;
     margin-left: 0;
 }
+.vscode-body.vscode-body--rtl {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+/* bidi-override only reaches inline content of the element it is set on, so set it on every block */
+.vscode-body.vscode-body--rtl * {
+    unicode-bidi: bidi-override;
+}
+
+.vscode-body.vscode-body--rtl .rtl-markdown-ltr,
+.vscode-body.vscode-body--rtl :is(pre, code),
+.vscode-body.vscode-body--rtl :is(pre, code) * {
+    direction: ltr;
+    unicode-bidi: isolate;
+}

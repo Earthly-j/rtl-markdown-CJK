@@ -1,13 +1,13 @@
 /*rtl-markdown*/
 .editor-instance[aria-label*=".rtl.md"] .view-lines div.view-line {
-    direction: rtl;
+    direction: rtl !important;
+    unicode-bidi: bidi-override !important;
     width: calc(100% - 30px) !important;
 }
-
 .editor-instance[aria-label*=".rtl.md"] .view-line > span {
     direction: rtl;
+    unicode-bidi: bidi-override;
 }
-
 .editor-instance[aria-label*=".rtl.md"] .selected-text[style*="left:0"] {
     right: 0;
     left: auto !important;
