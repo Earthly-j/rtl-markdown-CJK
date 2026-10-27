@@ -1,23 +1,13 @@
-# RTL Markdown
-
-VSCode Markdown Right-to-Left support.
+# RTL Markdown CJK
+this one make Chinese Japanese Korean RtL \
+but not numbers and English as how Arabic or Hebrew use RtL solution
 
 ## Activation Guide:
+Run npm install first. \
+node_modules is listed in .gitignore, so anyone who gets the folder from git won't have sudo-prompt.\
 
--   After Installing the plugin, activate it using the command `Active RTL-Markdown`.
--   Restart VSCode for change to take effect. (This plugin changes VSCode core files.)
--   Ignore VSCode warning about core changes.
--   Change your file name extension to `.rtl.md` for example `list.md` to `list.rtl.md`.
--   Now you should see RTL layout of your markdown file.
+Answer y to the warning about the missing repository field.  
 
-## Commands
-
-|Command|Effect
-|-|-|
-`Active RTL-Markdown` | Activate the plugin & change VSCode core file
-`Deactive RTL-Markdown` | Deactivate the plugin & reset VSCode core file to default
-`RTL Markdown` | Change file extension to `.rtl.md`
-`LTR Markdown` | Change file extension to `.md`
 
 ## Demo
 ![demo](https://github.com/dalirnet/rtl-markdown/raw/master/demo.gif)
